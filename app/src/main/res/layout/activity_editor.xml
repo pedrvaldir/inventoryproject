@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".EditorActivity"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+                <ImageView
+                    android:layout_margin="8dp"
+                    android:id="@+id/ivPreview"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <EditText
+                    android:id="@+id/edit_product_name"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_product_name"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/edit_product_price"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_product_price"
+                    android:inputType="number" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    >
+                        <EditText
+                            android:id="@+id/edit_product_quantity"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:hint="@string/hint_product_quantity"
+                            android:inputType="number" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal">
+
+                                <Button
+                                    android:id="@+id/decreaseButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-" />
+
+                                <Button
+                                    android:id="@+id/increaseButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="+" />
+
+                        </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_product_phonenumber"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/phoneNumber"
+                    android:inputType="phone" />
+
+                <Button
+                    android:id="@+id/SelectPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/select_photo" />
+
+                <TextView
+                    android:id="@+id/image_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/orderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:text="@string/call_caterer" />
+
+</RelativeLayout>
+
+
